@@ -1,0 +1,190 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.headerFont{
+	font-size: 48px !important;
+	line-height: 32px !important;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.shadow{
+	box-shadow: 10px 10px 8px #888888;
+}
+
+.joinButton {
+	border-radius: 100px;
+	height: 50px;
+	background-color: #004ebb;
+	width: 180px;
+	line-height: 25px;
+	color:white;
+	font-size: 24px;
+}
+
+.heroWord{
+	border-bottom: 2px solid #2980b9;
+	width: 60%;
+}
+
+.whyOpal{
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color:#2980b9;
+}
+
+.opalDifCenter{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color:#2980b9;
+}
+
+.opalDifferent{
+	text-align: left;
+	max-width: 800px;
+	font-size: 20px;
+}
+
+.offerTitles{
+	text-align: center;
+	color:#2980b9;
+	font-weight: 600;
+}
+
+
+@media (max-width: 767px){
+.joinButton {
+	width: 130px;
+	font-size: 18px;
+}
+
+.heroWord{
+	border-bottom: 2px solid #2980b9;
+	width: 80%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mobileLogo{
+	height: 75px;
+}
+
+
+}
+
+.heroFont{
+	font-family: 'Patua One', cursive;
+	color: #FFFFFF;
+	font-weight: 400 !important;
+}
+
+.titleText{
+	padding-top: 111px;
+	font-size: 32px;
+	line-height: 40px;
+	color: #293B74;
+	font-family: 'Patua One', cursive;
+}
+
+.howTitleText{
+	padding-top: 111px;
+		font-size: 32px;
+		line-height: 40px;
+		color: #FFFFFF;
+		font-family: 'Patua One', cursive;
+}
+
+.backgroundImage{
+	background-image: url("/img/background4.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.backgroundImageWhy{
+	background-image: url("/img/randomlines.png");
+	background-position: 0px -900px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-color: #fff
+}
+
+.centerText{
+	text-align: center;
+}
+
+.middleImage{
+	max-width: 100px;
+}
+
+.topJoin, .topJoin:hover{
+	color:white;
+}
+
+.descriptionText{
+	margin-top: 50px;
+	max-width: 600px;
+	font-size: 24px;
+}
+.formFun{
+	box-sizing: border-box;
+  height: 40px;
+  max-width: 372px;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+/*Animated*/
+.letters {
+	font-family: 'Homemade Apple', cursive !important;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2.9em;
+}
+
+@media (max-width: 767px){
+	.backgroundImageWhy{
+	background-position: -100px -200px;
+}
+	#intro{
+		text-align: center;
+	}
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2.0em;
+}
+.mobilePadding{
+	height: 32px;
+}
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: #2980b9;
+  opacity:0;
+  text-align: right;
+  font-family: 'Homemade Apple', cursive !important;
+}

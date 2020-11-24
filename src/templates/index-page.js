@@ -6,6 +6,11 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import groupSalons from '../img/group-therapy.png'
+import meditation from '../img/meditation.png'
+import zen from '../img/zen.png'
+
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -16,101 +21,90 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
+    <div style={{height:'50px'}}></div>
+        <div className="backgroundImage" style={{height:700}}>
+           <div className="container d-flex align-items-center h-100" style={{maxWidth: 1200}}>
+              <div className="row">
+                 <div className="col-12">
+                    <div id="intro">
+                       <div className="ml6">
+                          We're on a mission to create
+                          <div className="heroWord">
+                             <div className="text-wrapper"><span className="letters"></span></div>
+                          </div>
+                       </div>
+                    </div>
+                    <div className="descriptionText">
+                       Opal is a <b>physical space</b> designed to support each individual’s mental wellness journey 
+                       <div className="joinSection">
+                          <br />
+                          <button className="btn joinButton"><a className="topJoin" href="/#join">Join Now</a></button>
+                       </div>
+                    </div>
+                    <div className="col-2">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div className="backgroundImageWhy">
+           <div style={{height:32}} id="why"></div>
+           <div className="container" style={{maxWidth: 1200}}>
+              <h1 className="whyOpal"><b>Why Opal?</b></h1>
+              <div className="opalDifferent">
+                Mental wellness looks different for everyone. Maybe you want a quiet place for quiet reflection; maybe you want a space to share experiences with peers. <br /><br />Opal lets <b>you choose your path</b> to mental wellness. 
+              </div>
+
+            </div>
+            <div style={{height:72}}  id="offer"></div>
+        </div>
+        <div style={{backgroundColor: '#f8f9fa'}}>
+          <div style={{height:'32px'}}></div>
+          <div className="container" style={{maxWidth: '1400px'}}>
+             <h1 className="opalDifCenter"><b>What Makes Opal Different?</b></h1>
+              <div className="row" style={{paddingLeft: '40px', paddingRight: '40px'}}>
+                 <div className="col-md-4 col-xs-12 h-100">
+                    <div className="mx-auto middleImage">
+                       <img src={groupSalons} className="img-fluid" />
+                    </div>
+                    <br/>
+                    <div>
+                       <h4 className="offerTitles">Group Salons</h4>
+                    </div>
+                    <br/>
+                    <div>
+                       <h5 className="centerText">Share your mental wellness experiences, connect with one another and provide / receive support</h5>
+                    </div>
+                    <div className="mobilePadding"></div>
+                 </div>
+                 <div className="col-md-4 col-xs-12 h-100">
+                    <div className="mx-auto middleImage">
+                       <img src={zen} className="img-fluid" />
+                    </div>
+                    <br />
+                    <div>
+                       <h4 className="offerTitles">Individual Wellness Rooms</h4>
+                    </div>
+                    <br/>
+                    <h5 className="centerText">Simply be alone, or practice individual relaxation techniques (e.g. meditation, breathwork, yoga)</h5>
+                    <div className="mobilePadding"></div>
+                 </div>
+                 <div className="col-md-4 col-xs-12">
+                    <div className="mx-auto middleImage">
+                       <img src={meditation} className="img-fluid"/>
+                    </div>
+                    <br />
+                    <div>
+                       <h4 className="offerTitles">Wellness and Resiliency Workshops</h4>
+                    </div>
+                    <br/>
+                    <h5 className="centerText">Mindfulness meditation, breathwork and resiliency training are just some of our offerings.</h5>
+                    <div className="mobilePadding"></div>
+                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+              <div style={{height:'64px'}}></div>
+           </div>
   </div>
 )
 

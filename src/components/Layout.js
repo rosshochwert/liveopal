@@ -14,7 +14,8 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
